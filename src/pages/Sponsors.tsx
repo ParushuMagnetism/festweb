@@ -16,27 +16,27 @@ const Sponsors = () => {
       website: "https://innovatelabs.example.com",
       description: "Innovation and research company",
     },
-    {
-      name: "CodeMasters",
-      tier: "Gold",
-      logo: "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=400&q=80",
-      website: "https://codemasters.example.com",
-      description: "Software development excellence",
-    },
-    {
-      name: "DigitalFirst",
-      tier: "Silver",
-      logo: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=400&q=80",
-      website: "https://digitalfirst.example.com",
-      description: "Digital transformation specialists",
-    },
-    {
-      name: "CloudTech",
-      tier: "Silver",
-      logo: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&q=80",
-      website: "https://cloudtech.example.com",
-      description: "Cloud infrastructure provider",
-    },
+    // {
+    //   name: "CodeMasters",
+    //   tier: "Gold",
+    //   logo: "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=400&q=80",
+    //   website: "https://codemasters.example.com",
+    //   description: "Software development excellence",
+    // },
+    // {
+    //   name: "DigitalFirst",
+    //   tier: "Silver",
+    //   logo: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=400&q=80",
+    //   website: "https://digitalfirst.example.com",
+    //   description: "Digital transformation specialists",
+    // },
+    // {
+    //   name: "CloudTech",
+    //   tier: "Silver",
+    //   logo: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&q=80",
+    //   website: "https://cloudtech.example.com",
+    //   description: "Cloud infrastructure provider",
+    // },
     {
       name: "StartupHub",
       tier: "Bronze",
@@ -75,7 +75,7 @@ const Sponsors = () => {
       <div className="container mx-auto px-4">
         <h1 className="text-center mb-6">Our Sponsors</h1>
         <p className="text-center text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
-          TechFiesta 2025 is powered by these amazing partners who believe in innovation and talent
+          Vaidyuthak 2025 is powered by these amazing partners who believe in innovation and talent
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
@@ -118,14 +118,14 @@ const Sponsors = () => {
         <div className="glass-card p-8 rounded-2xl text-center">
           <h2 className="text-3xl font-bold mb-4 gradient-text">Become a Sponsor</h2>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Partner with TechFiesta and reach 5000+ talented students, innovators, and future leaders. 
+            Partner with Vaidyuthak and reach 500+ talented students, innovators, and future leaders. 
             Contact us to explore sponsorship opportunities.
           </p>
           <a
-            href="mailto:sponsors@techfiesta.com"
+            href="https://www.instagram.com/vaidyuthak_2025"
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-lg"
           >
-            sponsors@techfiesta.com
+            Vaidyuthak_2025
           </a>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import { Calendar, Clock, MapPin, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 
 interface EventCardProps {
   title: string;
@@ -11,6 +10,7 @@ interface EventCardProps {
   venue: string;
   participants: string;
   image: string;
+  registerLink?: string; // Google Form link
 }
 
 const EventCard = ({
@@ -22,6 +22,7 @@ const EventCard = ({
   venue,
   participants,
   image,
+  registerLink,
 }: EventCardProps) => {
   const getCategoryColor = (cat: string) => {
     switch (cat.toLowerCase()) {
@@ -37,7 +38,8 @@ const EventCard = ({
   };
 
   return (
-    <div className="glass-card rounded-2xl overflow-hidden glow-hover group">
+    <div className="glass-card rounded-2xl overflow-hidden glow-hover group flex flex-col">
+      {/* Image */}
       <div className="relative h-48 overflow-hidden">
         <img
           src={image}
@@ -45,14 +47,19 @@ const EventCard = ({
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
         <div className="absolute top-4 right-4">
-          <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getCategoryColor(category)}`}>
+          <span
+            className={`px-3 py-1 rounded-full text-xs font-semibold ${getCategoryColor(
+              category
+            )}`}
+          >
             {category}
           </span>
         </div>
       </div>
 
-      <div className="p-6">
-        <h3 className="text-2xl font-bold mb-3 gradient-text">{title}</h3>
+      {/* Event Info */}
+      <div className="p-6 flex flex-col flex-1">
+        <h3 className="text-2xl font-bold mb-2 gradient-text">{title}</h3>
         <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{description}</p>
 
         <div className="space-y-2 mb-6">
@@ -74,11 +81,14 @@ const EventCard = ({
           </div>
         </div>
 
-        <Link to="/register">
-          <Button className="w-full bg-gradient-festive hover:shadow-glow-primary transition-all">
-            Register for Event
-          </Button>
-        </Link>
+        {/* Register Button */}
+        {registerLink && (
+          <a href={registerLink} target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <Button className="w-full bg-gradient-festive hover:shadow-glow-primary transition-all">
+              Register Now
+            </Button>
+          </a>
+        )}
       </div>
     </div>
   );

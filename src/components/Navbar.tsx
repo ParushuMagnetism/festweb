@@ -24,9 +24,14 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <Sparkles className="w-8 h-8 text-primary group-hover:rotate-180 transition-transform duration-500" />
-            <span className="text-2xl font-bold gradient-text">TechFiesta 2025</span>
+             <img
+            src="https://res.cloudinary.com/dylzolnfu/image/upload/v1731179034/Untitled__1_-removebg-preview_vznmb0.png"
+            alt="Vaidyuthak Logo"
+            className="w-20 h-20 mx-auto m-auto rounded-full object-cover"
+          />
+             {/* <span className="text-2xl font-bold gradient-text">Vaidyuthak 2025</span> */}
           </Link>
+           
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
@@ -41,11 +46,11 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Link to="/register">
+            {/* <Link to="/register">
               <Button className="bg-gradient-festive hover:shadow-glow-primary transition-all">
                 Register Now
               </Button>
-            </Link>
+            </Link> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -74,11 +79,11 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <Link to="/register" onClick={() => setIsOpen(false)}>
+              {/* <Link to="/register" onClick={() => setIsOpen(false)}>
                 <Button className="w-full bg-gradient-festive hover:shadow-glow-primary transition-all">
                   Register Now
                 </Button>
-              </Link>
+              </Link> */}
             </div>
           </div>
         )}

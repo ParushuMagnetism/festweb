@@ -98,7 +98,7 @@ const Register = () => {
     <div className="min-h-screen pt-32 pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-center mb-6">Register for TechFiesta</h1>
+          <h1 className="text-center mb-6">Register for Vaidyuthak</h1>
           <p className="text-center text-muted-foreground text-lg mb-12">
             Fill in your details to secure your spot at the biggest fest of the year!
           </p>
@@ -113,7 +113,7 @@ const Register = () => {
                     <FormItem>
                       <FormLabel>Full Name *</FormLabel>
                       <FormControl>
-                        <Input placeholder="John Doe" {...field} />
+                        <Input placeholder="Full Name" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -128,7 +128,7 @@ const Register = () => {
                       <FormItem>
                         <FormLabel>Email *</FormLabel>
                         <FormControl>
-                          <Input type="email" placeholder="john@example.com" {...field} />
+                          <Input type="email" placeholder="john@nie.ac.in" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
